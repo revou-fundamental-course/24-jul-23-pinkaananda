@@ -31,13 +31,13 @@
             <!-- Slideshow -->
             <div class="slideshow-container">
                 <div class="slide">
-                    <img src="assets/hotel.jpeg" alt="Image 1">
+                    <img src="assets/hotel.jpeg" alt="Image 1" width="100px" height="250px">
                 </div>
                 <div class="slide">
-                    <img src="assets/hotel-lombok.webp" alt="Image 2">
+                    <img src="assets/hotel-lombok.webp" alt="Image 2" width="100px" height="250px">
                 </div>
                 <div class="slide">
-                    <img src="assets/hotel-kamar.jpg" alt="Image 3">
+                    <img src="assets/hotel-kamar.jpg" alt="Image 3" width="100px" height="250px">
                 </div>
         
                 <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
@@ -77,10 +77,10 @@
             <div class="contact-form">
                 <h3>Contact Us</h3>
                 <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="First dan last name">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" >
                     <label for="interest">What are you interested in?</label>
                     <select id="interest" name="interest">
                         <option value="package">Travel Packages</option>
@@ -97,36 +97,30 @@
 	<section class="our-package">
         <h2>Our Package</h2>
         <div class="package-grid">
-            <div class="package">
-                <img src="icon1.png" alt="Icon 1">
-                <h4>Jepang</h4>
-                <p>Majestic temples, vibrant culture, sushi delights, cherry blossoms enchant.</p>
+            <div class="package-item" style="background-image: url('assets/jepang.jpg');">
+                <h3 class="title">Jepang</h3>
+                <p class="description">Majestic temples, vibrant culture, sushi delights, cherry blossoms enchant.</p>
             </div>
-            <div class="package">
-                <img src="icon2.png" alt="Icon 2">
-                <h4>Korea Selatan</h4>
-                <p>Trendy shopping and dynamic nightlife.</p>
+            <div class="package-item" style="background-image: url('assets/south-korea.jpg');">
+                <h3 class="title">Korea Selatan</h3>
+                <p class="description">Trendy shopping, dynamic nightlife, delicious street food.</p>
             </div>
-            <div class="package">
-                <img src="icon3.png" alt="Icon 3">
-                <h4>Singapura</h4>
-                <p>Futuristic skyline, diverse cuisine, vibrant gardens, cultural fusion.</p>
+            <div class="package-item" style="background-image: url('assets/singapura.jpg');">
+                <h3 class="title">Singapura</h3>
+                <p class="description">Futuristic skyline, diverse cuisine, vibrant gardens, cultural fusion.</p>
             </div>
             <div class="divider"></div>
-            <div class="package">
-                <img src="icon4.png" alt="Icon 4">
-                <h4>Bali</h4>
-                <p>Tropical paradise, pristine beaches, vibrant culture, and serene temples.</p>
+            <div class="package-item" style="background-image: url('assets/bali.jpg');">
+                <h3 class="title">Bali</h3>
+                <p class="description">Tropical paradise, pristine beaches, vibrant culture, and serene temples.</p>
             </div>
-            <div class="package">
-                <img src="icon5.png" alt="Icon 5">
-                <h4>Lombok</h4>
-                <p>Paradise beaches, vibrant culture, and breathtaking landscapes await in Lombok.</p>
+            <div class="package-item" style="background-image: url('assets/lombok.jpg');">
+                <h3 class="title">Lombok</h3>
+                <p class="description">Paradise beaches, vibrant culture, and breathtaking landscapes await.</p>
             </div>
-            <div class="package">
-                <img src="icon6.png" alt="Icon 6">
-                <h4>Nusa Tenggara Timur</h4>
-                <p>Exotic beaches, rich culture, breathtaking landscapes, unforgettable adventure.</p>
+            <div class="package-item" style="background-image: url('assets/ntt.jpg');">
+                <h3 class="title">Nusa Tenggara Timur</h4>
+                <p class="description">Exotic beaches, rich culture, breathtaking landscapes, unforgettable adventure.</p>
             </div>
         </div>
 
