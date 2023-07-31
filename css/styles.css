@@ -75,8 +75,49 @@ header {
     padding: 20px;
 }
 
-.slideshow {
-    /* Gaya CSS untuk slideshow di sini */
+/* Gaya CSS untuk slideshow di sini */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .quote {
@@ -84,7 +125,7 @@ header {
 }
 
 .quote blockquote {
-    font-size: 24px;
+    font-size: 15px;
     font-style: italic;
     color: #666;
 }
@@ -245,7 +286,7 @@ header {
 /* CSS FOOTER*/
 
 .footer {
-    background-color: #f0f0f0;
+    background-color: white;
     padding: 20px;
     text-align: center;
 }
@@ -343,6 +384,7 @@ body {
 .profile-info {
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 
 .profile-info h5 {

@@ -29,9 +29,23 @@
 	 <div class="container">
         <section class="left-section">
             <!-- Slideshow -->
-            <div class="slideshow">
-                <!-- Masukkan gambar-gambar untuk slideshow di sini -->
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="assets/hotel.jpeg" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="assets/hotel-lombok.webp" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="assets/hotel-kamar.jpg" alt="Image 3">
+                </div>
+        
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
             </div>
+
+            <script src="js/script.js"></script>
+
             <!-- Kutipan -->
             <div class="quote">
                 <blockquote>
@@ -40,10 +54,10 @@
             </div>
             <!-- Profil Penulis -->
             <div class="profile">
-                    <img src="assets/user-profil.png" alt="Florence Hughes">
+                    <img src="assets/user-profil.png" alt="Pinka Ananda">
                     <div class="profile-info">
-                    <h5>Florence Hughes</h5>
-                    <p>Ibu Rumah Tangga, 28</p>
+                    <h5>Pinka Ananda</h5>
+                    <p><i>Mahasiswa, 20</i></p>
                 </div>
             </div>
             <!-- List Manfaat Perjalanan -->
@@ -141,7 +155,7 @@
 	<footer class="footer">
         <div class="footer-content">
             <ul>
-            <img src="logo.png" alt="Logo">
+            <img src="assets/Travel.png" alt="Logo">
             <div class="links">
                 <a href="#">Terms of Service</a>
                 <a href="#">Privacy Policy</a>
